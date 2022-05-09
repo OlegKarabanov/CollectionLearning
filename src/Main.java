@@ -20,9 +20,22 @@ public class Main {
 
         catslist.add( new Cat("Бегемот2"));
 
+        catslist.remove(1);  //удаление элемента по индексу
+
+        Cat cat = catslist.get(0);
+        System.out.println(cat);
+
+        System.out.println(catslist.lastIndexOf(cat));
+
+        catslist.add(2,cat);
+        catslist.set(2, new Cat("Меня сюда вставили"));
+
+        //catslist.removeAll(catslist); // удаление всех котов
+        catslist.removeAll(Arrays.asList(cat, catslist.get(3))); // удаление 3 индекса
+
         System.out.println(catslist.toString());
 
-
+        System.out.println(catslist.size());
 
 
     }
