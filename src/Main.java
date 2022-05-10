@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args){
@@ -13,6 +14,8 @@ public class Main {
         //cats[1] = null;
         System.out.println(Arrays.toString(cats));
 
+
+        //ArraysList
         ArrayList<Cat> catslist = new ArrayList<>();
         for(Cat cat : cats){
             catslist.add(cat);
@@ -37,6 +40,20 @@ public class Main {
 
         System.out.println(catslist.size());
 
+
+        //LinkedList
+        String str1 = new String("Hello world");
+        String str2 = new String("My name is Oleg");
+        String str3 = new String("I love Java");
+
+        LinkedList<String> olegBio = new LinkedList<>();
+        olegBio.add(str1);
+        olegBio.add(str2);
+        olegBio.add(str3);
+        System.out.println(olegBio);
+
+        olegBio.remove(1);
+        System.out.println(olegBio);
 
     }
 }
